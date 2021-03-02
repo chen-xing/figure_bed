@@ -25,9 +25,9 @@
         init();
 		
 		function initImageArr(){
-			$.getJSON("images.json", function (data){}
+			$.getJSON("images.json", function (data){
 				imageArr=JSON.parse(data);
-			);
+			});
 		}
         function init(containerId){
             // 最后一步，调整li和每一个img的宽度
