@@ -27,7 +27,7 @@
 		
 		function initImageArr(){
 			$.getJSON("images.json", function (data){
-				imageArr=JSON.parse(data);
+				imageArr=data;
 			});
 		}
         function init(containerId){
