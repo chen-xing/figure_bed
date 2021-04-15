@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>宝宝金句</title> 
+<link href="https://www.94rg.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<script type="text/javascript" src="https://demosc.chinaz.net/Files/DownLoad/webjs1/202002/jiaoben7367/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://demosc.chinaz.net/Files/DownLoad/webjs1/202002/jiaoben7367/js/vue.min.js"></script>
+
+<link href="https://demosc.chinaz.net/Files/DownLoad/webjs1/202002/jiaoben7367/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div class="ui-timeLine">
+	<a v-for="item in items" class="item">
+		<div class="line"></div>
+		<div class="dot"></div>
+		<div class="box">
+			<div class="cbox">
+				<div class="date">{{item.date}}</div>
+				<div class="title">{{item.yuyan}}</div>
+				<div class="types">
+					<span v-if="item.personId==1">陈卓帆</span>
+					<span v-else="item.personId==2">陈卓希</span>
+				</div>
+			</div>
+		</div>
+	</a>
+	<div class="activeLine"></div>
+</div>
+
+<script>
+	(function($) {
+		$.fn.uiTimeLine = function() {
+			var $timeLine = $(".ui-timeLine");
+			var $activeLine = $(".ui-timeLine .activeLine");
+			var $dots = $(".ui-timeLine .dot");
+			var $cboxs = $(".ui-timeLine .item .cbox");
+			return this.each(function() {
+				function setActiveLineHeight() {
+					let height = $(document).scrollTop() + window.screen.height;
+					let j = 0;
+					for (let i = 0; i < $dots.length; i++) {
+						if ($($dots[i]).offset().top < height) {
+							$($($dots[i])).addClass("active");
+							$($cboxs[i]).css({
+								"left": 0
+							});
+							j = i;
+						} else {
+							$($($dots[i])).removeClass("active")
+							$($cboxs[i]).css({
+								"left": "100vw"
+							});
+						}
+					}
+					$activeLine.css({
+						"height": $($dots[j]).offset().top - $timeLine.offset().top + 40 + "px"
+					})
+				}
+				$(window).on('scroll', setActiveLineHeight);
+				setActiveLineHeight();
+			})
+		}
+	})(jQuery);
+</script>
+<script>
+	var vue_data = new Vue({
+		el: ".ui-timeLine",
+		data: {
+			items: [{"personId":1,"yuyan":"爸爸苹果再不吃就烂掉了","date":"2021/4/12"},{"personId":1,"yuyan":"被告知需要休息下，我的课还没上完怎么办，deer用英语怎么说","date":"2021/4/12"},{"personId":1,"yuyan":"为什么蚊子咬的痒，蜜蜂咬的痛？蚊子咬的起包，蜜蜂咬的出血","date":"2021/4/12"},{"personId":1,"yuyan":"妹妹修车子，要旁边放一盆水，倒在车下面，网上看","date":"2021/4/8"},{"personId":1,"yuyan":"我戴个猪八戒吓死你","date":"2021/1/1"},{"personId":1,"yuyan":"让船把爸爸拖走","date":"2021/1/1"}]
+		},
+		mounted: function() {
+			$(".ui-timeLine").uiTimeLine();
+		},
+	});
+</script>
+
+</body>
+</html>

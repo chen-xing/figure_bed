@@ -1,104 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>瀑布流</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
-</head>
-<body>
-    <script>
-        var ul;
-        var colHeightList = [];
-        const Col_Num = 5;
-        const Margin_Left = 5;
-        var num = 1;
-        const Max_Num = 67;
-        var bodyWidth;
-		var imageArr;
-		initImageArr();
-        
-		function initImageArr(){
-			$.getJSON("images.json", function (data){
-				imageArr=data;
-				init();
-			});
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script type="text/javascript" src="https://demosc.chinaz.net/Files/DownLoad/webjs1/202002/jiaoben7367/js/vue.min.js"></script>
+<title>宝宝金句</title> 
+<link href="https://www.94rg.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<style type="text/css"> 
+*{ 
+margin:0; 
+padding:0; 
+} 
+body{ 
+font-family:arial,sans-serif; 
+font-size:100%; 
+margin:3em; 
+background:#666 ; 
+color:#fff ; 
+} 
+h2,p{ 
+font-size:100%; 
+font-weight:normal; 
+} 
+ul,li{ 
+list-style:none; 
+} 
+ul{ 
+overflow:hidden; 
+padding:3em; 
+} 
+ul li a{ 
+text-decoration:none; 
+color:#000 ; 
+background:#ffc ; 
+display:block;  
+padding:1em; 
+} 
+ul li{ 
+margin:1em; 
+float:left; 
+} 
+ul li h2 
+{ 
+font-size: 140%; 
+font-weight: bold; 
+padding-bottom: 10px; 
+} 
+ul li p 
+{ 
+font-family: “Reenie Beanie” ,arial,sans-serif,微软雅黑; 
+font-size: 110%; 
+} 
+ul li a 
+{ 
+text-decoration: none; 
+color: #000 ; 
+background: #ffc ;
+font-size:40px; 
+display: block; 
+padding: 1em; /* Firefox */ 
+-moz-box-shadow: 5px 5px 7px rgba(33,33,33,1) ; /* Safari+Chrome */ 
+-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7) ; /* Opera */ 
+box-shadow: 5px 5px 7px rgba(33,33,33,.7) ; 
+} 
+ul li a{ 
+-webkit-transform:rotate(-6deg); 
+-o-transform:rotate(-6deg); 
+-moz-transform:rotate(-6deg); 
+} 
+ul li:nth-child(even) a{ 
+-o-transform:rotate(4deg); 
+-webkit-transform:rotate(4deg); 
+-moz-transform:rotate(4deg); 
+position:relative; 
+top:5px; 
+} 
+ul li:nth-child(3n) a{ 
+-o-transform:rotate(-3deg); 
+-webkit-transform:rotate(-3deg); 
+-moz-transform:rotate(-3deg); 
+position:relative; 
+top:-5px; 
+} 
+ul li:nth-child(5n) a{ 
+-o-transform:rotate(5deg); 
+-webkit-transform:rotate(5deg); 
+-moz-transform:rotate(5deg); 
+position:relative; 
+top:-10px; 
+} 
+ul li a:hover,ul li a:focus{ 
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7) ; 
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7) ; 
+box-shadow:10px 10px 7px rgba(0,0,0,.7) ; 
+-webkit-transform: scale(1.25); 
+-moz-transform: scale(1.25); 
+-o-transform: scale(1.25); 
+position:relative; 
+z-index:5; 
+} 
+ul li:nth-child(even) a{ 
+-o-transform:rotate(4deg); 
+-webkit-transform:rotate(4deg); 
+-moz-transform:rotate(4deg); 
+position:relative; 
+top:5px; 
+background:#cfc ; 
+} 
+ul li:nth-child(3n) a{ 
+-o-transform:rotate(-3deg); 
+-webkit-transform:rotate(-3deg); 
+-moz-transform:rotate(-3deg); 
+position:relative; 
+top:-5px; 
+background:#ccf ; 
+} 
+</style> 
+<link href=”http://fonts.googleapis.com/css?family=Reenie+Beanie:regular” rel=”stylesheet” type=”text/css”> 
+</head> 
+<body> 
+<ul class="ui-timeLine"> 
+<li v-for="item in items"><a> 
+<h2 v-if="item.personId==1">陈卓帆</h2>
+<h2 v-else="item.personId==2">陈卓希</h2>
+<p>{{item.yuyan}}</p> 
+<p style="float:right;padding-right:5px;margin-bottom:1px;">{{item.date}}</p>
+<p style="clear:both;"></p>
+</a></li> 
+</ul> 
+</body> 
+<script>
+	var vue_data = new Vue({
+		el: ".ui-timeLine",
+		data: {
+			items: [{"personId":1,"yuyan":"爸爸苹果再不吃就烂掉了","date":"2021/4/12"},{"personId":1,"yuyan":"被告知需要休息下，我的课还没上完怎么办，deer用英语怎么说","date":"2021/4/12"},{"personId":1,"yuyan":"为什么蚊子咬的痒，蜜蜂咬的痛？蚊子咬的起包，蜜蜂咬的出血","date":"2021/4/12"},{"personId":1,"yuyan":"妹妹修车子，要旁边放一盆水，倒在车下面，网上看","date":"2021/4/8"},{"personId":1,"yuyan":"我戴个猪八戒吓死你","date":"2021/1/1"},{"personId":1,"yuyan":"让船把爸爸拖走","date":"2021/1/1"}]
+
+
 		}
-        function init(containerId){
-            // 最后一步，调整li和每一个img的宽度
-            bodyWidth = document.body.clientWidth;
-            ul = document.createElement('ul');
-            // document.documentElement获取到的是html标签
-            // document.body获取到的是body标签
-            document.body.appendChild(ul);
-            Object.assign(ul.style, {
-                listStyle: 'none',
-                width: '100%',
-                margin: 0,
-                padding: 0
-            });
-            for (var i = 0; i < Col_Num; i++) {
-               var li = document.createElement('li');
-               Object.assign(li.style, {
-                   marginLeft: i === 0 ? 0 : Margin_Left + 'px',
-                   padding: 0,
-                   width: (document.body.clientWidth - Margin_Left * (Col_Num - 1)) / Col_Num + 'px',
-                   float: 'left',
-                //    background: '#' + i + '5' + i * i,
-                //    height: '2000px'
-               });
-               colHeightList.push(0); //把当前列的高度初始化为0
-               ul.appendChild(li);
-            }
-            resizeHandler();
-            window.addEventListener("resize", resizeHandler);
-            // 加载图片
-            loadImage('https://cdn.jsdelivr.net/gh/chen-xing/figure_bed_02/cdn/' + imageArr[num]);
-        }
-        function resizeHandler(){
-            for (let i = 0; i < Col_Num; i++) {
-                // ul.children[i].style.width = (document.body.clientWidth - Margin_Left * (Col_Num - 1)) / Col_Num + 'px';
-                var width = (document.body.clientWidth - Margin_Left * (Col_Num - 1)) / Col_Num + 'px';
-                ul.children[i].style.width = width;
-                for(var j = 0; j < ul.children[i].children.length; j++){
-                    ul.children[i].children[j].style.width = width;
-                }
-            }
-        }
-
-        //图片预加载
-        function loadImage(src){
-            var img = new Image();
-            img.addEventListener('load', loadImgHandler);
-            img.src = src;
-        }
-
-        function loadImgHandler(e){
-            //寻找colHeightList数组中的最小值
-            var min = Math.min.apply(null, colHeightList);
-            //找到最小项所在的索引位置
-            var index = colHeightList.indexOf(min);
-            // 这里的this也可以替换为e.target
-            this.style.width = (document.body.clientWidth - Margin_Left * (Col_Num - 1)) / Col_Num + 'px';
-            ul.children[index].appendChild(this);
-            colHeightList[index] += this.offsetHeight;
-
-            //最后一步，调整宽度
-            if(document.body.clientWidth !== bodyWidth){
-                resizeHandler();
-            }
-            num++;
-            if(num >= Max_Num){
-                return;
-            }
-            loadImage('https://cdn.jsdelivr.net/gh/chen-xing/figure_bed_02/cdn/' + imageArr[num]);
-        }
-    </script>
-</body>
-</html>
+	});
+</script>
+</html> 
