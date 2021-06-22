@@ -6,7 +6,7 @@ $(function(){
 					object["img"]="images/page_L"+(i+1)%7+".png";
 					object["num"]=i+1;
 					object["text"]=new Array(data[i].yuyan);
-					object["title"]=iata[i].date;
+					object["title"]=data[i].date;
 					object["type"]=1;
 					book_data.push(object);
 		
