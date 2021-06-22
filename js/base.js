@@ -11,7 +11,7 @@ $(function(){
 					book_data.push(object);
 		
 				}
-				creat_html(data)
+				creat_html(book_data)
 			});
    
     function creat_html(data,num){
