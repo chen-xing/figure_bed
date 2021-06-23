@@ -130,19 +130,16 @@ background:#ccf ;
 </ul> 
 </body> 
 <script>
-    var dataItem=[];
 	$(function(){
 		$.getJSON("babyGoldenSentence.json", function (data){
-			dataItem=data;
+			var vue_data = new Vue({
+				el: ".ui-timeLine",
+				data: {
+					items: data
+				}
+			});
 		});
 	});
-	var vue_data = new Vue({
-		el: ".ui-timeLine",
-		data: {
-			items: dataItem
-
-
-		}
-	});
+	
 </script>
 </html> 
