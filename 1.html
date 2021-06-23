@@ -72,10 +72,14 @@
 				el: ".ui-timeLine",
 				data: {
 					items: data
-				}
+				},
+				mounted: function() {
+					$(".ui-timeLine").uiTimeLine();
+				},
 			});
 		});
 	});
+	
 </script>
 
 </body>
