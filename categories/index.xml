@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 初学者天堂</title>
+    <link>https://www.pg.run/categories/</link>
+    <description>Recent content in Categories on 初学者天堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 23 Feb 2022 11:55:00 +0800</lastBuildDate><atom:link href="https://www.pg.run/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://www.pg.run/categories/blog/</link>
+      <pubDate>Wed, 23 Feb 2022 11:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://www.pg.run/categories/Tool/</link>
+      <pubDate>Wed, 23 Feb 2022 11:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/categories/Tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://www.pg.run/categories/linux/</link>
+      <pubDate>Fri, 18 Feb 2022 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thinking</title>
+      <link>https://www.pg.run/categories/thinking/</link>
+      <pubDate>Fri, 18 Feb 2022 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/categories/thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>healthy</title>
+      <link>https://www.pg.run/categories/healthy/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/categories/healthy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://www.pg.run/categories/Java/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/categories/Java/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

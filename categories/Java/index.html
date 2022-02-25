@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+
+    <title>Java | 初学者天堂</title>
+    <meta property="og:title" content="Java - 初学者天堂">
+    <meta property="og:type" content="article">
+        
+        
+    <meta name="Keywords" content="工作总结、学习记录、心得体会、超越自我">
+    <meta name="description" content="Java">
+        
+    <meta name="author" content="Mars">
+    <meta property="og:url" content="https://www.pg.run/categories/Java/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <link rel="alternate" type="application/rss+xml" href="https://www.pg.run/categories/Java/index.xml" title="初学者天堂" />
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+        <link href="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://www.pg.run">
+                        初学者天堂
+                    </a>
+                
+                <p class="description">明确目标,专注效率，遇见更好的自己!</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://www.pg.run">首页</a>
+                    
+                    <a  href="https://www.pg.run/tools/" title="工具">工具</a>
+                    
+                    <a  href="https://www.pg.run/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://www.pg.run/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <h3 class="archive-title">
+        分类
+        <span class="keyword">Java</span>
+        中的文章
+    </h3>
+    
+
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://www.pg.run/mysql-hbase-aop.html">aop联合反射实现mysql与hbase的读写切换</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年12月18日
+        </date>
+        
+        <div class="post-meta meta-category">
+            |
+            
+            <a href='/categories/Java'>Java</a>
+            
+        </div>
+        
+        <div class="post-content">
+            1、能够做的事情 开关控制mysql和hbase的读写切换，实时生效 内置监控可以观察hbase的运行性能（刚切过去，性能稳定性有待考究） 2、核心的代码 package tech.chenxing.aop; import tech.chenxing.conf.RgSystemConfig; import tech.chenxing.util.SpringTool;……
+            <p class="readmore"><a href="https://www.pg.run/mysql-hbase-aop.html">阅读全文</a></p>
+        </div>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://www.pg.run/freemarker-base.html">freemarker语法</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年12月18日
+        </date>
+        
+        <div class="post-meta meta-category">
+            |
+            
+            <a href='/categories/Java'>Java</a>
+            
+        </div>
+        
+        <div class="post-content">
+            1、基础语法 freemarker语法、freemarker入门、简单高效的模板引擎。 语法 说明 ${expr} 通用插值 #{expr}或#{expr;format} 数字格式化插值……
+            <p class="readmore"><a href="https://www.pg.run/freemarker-base.html">阅读全文</a></p>
+        </div>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://www.pg.run/java-zuul.html">网关代理插件zuul的使用</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年12月18日
+        </date>
+        
+        <div class="post-meta meta-category">
+            |
+            
+            <a href='/categories/Java'>Java</a>
+            
+        </div>
+        
+        <div class="post-content">
+            1、引入pom &lt;dependency&gt; &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt; &lt;artifactId&gt;spring-cloud-starter-zuul&lt;/artifactId&gt; &lt;version&gt;1.4.0.RELEASE&lt;/version&gt; &lt;exclusions&gt; &lt;exclusion&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-logging&lt;/artifactId&gt; &lt;/exclusion&gt; &lt;/exclusions&gt; &lt;/dependency&gt; 2、开启配置 @EnableZuulProxy // 开启网关功能 public class Application { } 3、自定义配置规则 zuul.routes.products.path = /** zuul.routes.products.url = http://in-testopenapi.esign.cn:9696 zuul.ignored-patterns = /**/notice/**,/doc.html,/swagger-resources,/v2/api-docs,/**/webjars/**,/**/health,/**/shutdown,/**/eurekaRegistration/stop,/**/mappings zuul.routes.products.path 表示拦截的url,/**表示拦截所有的请求，多个……
+            <p class="readmore"><a href="https://www.pg.run/java-zuul.html">阅读全文</a></p>
+        </div>
+    </article>
+    
+
+    
+
+
+
+
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2022 <a href="https://www.pg.run">初学者天堂 By Mars</a>
+        
+    </div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://www.pg.run/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://www.pg.run">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://www.pg.run/linux-rgblog-migrate.html" title="Rgblog迁移指南">Rgblog迁移指南</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/js-simple-dialog.html" title="前端对话框插件simple-dialog使用指南">前端对话框插件simple-dialog使用指南</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/github-submit-fail.html" title="git提交代码到github提示失败">git提交代码到github提示失败</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/hugo-github-cloudflare.html" title="使用cloudflare CDN来免费加速自己的博客">使用cloudflare CDN来免费加速自己的博客</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/hugo-utterances-github.html" title="HUGO博客使用 UTTERANCES 作为评论系统">HUGO博客使用 UTTERANCES 作为评论系统</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/linux-docker-python.html" title="linux下查找python的安装目录">linux下查找python的安装目录</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/thinking-about-blog.html" title="关于自建站的一些感悟">关于自建站的一些感悟</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/mysql-hbase-aop.html" title="aop联合反射实现mysql与hbase的读写切换">aop联合反射实现mysql与hbase的读写切换</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/freemarker-base.html" title="freemarker语法">freemarker语法</a>
+    </li>
+    
+    <li>
+        <a href="https://www.pg.run/github-action-hugo.html" title="github action 部署hugo">github action 部署hugo</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://www.aliyun.com/minisite/goods?userCode=jdg9oj97&amp;share_source=copy_link" title="pan gun running" target="_blank" style="color:red">
+                
+                    <img src="/images/banner.png">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="https://www.pg.run/categories/Java/">Java (3)</a></li>
+    
+    <li><a href="https://www.pg.run/categories/Tool/">Tool (11)</a></li>
+    
+    <li><a href="https://www.pg.run/categories/blog/">blog (3)</a></li>
+    
+    <li><a href="https://www.pg.run/categories/healthy/">healthy (1)</a></li>
+    
+    <li><a href="https://www.pg.run/categories/linux/">linux (1)</a></li>
+    
+    <li><a href="https://www.pg.run/categories/thinking/">thinking (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://www.pg.run/tags/blog/">blog</a>
+    
+    <a href="https://www.pg.run/tags/freemarker/">freemarker</a>
+    
+    <a href="https://www.pg.run/tags/git/">git</a>
+    
+    <a href="https://www.pg.run/tags/idea/">idea</a>
+    
+    <a href="https://www.pg.run/tags/java/">java</a>
+    
+    <a href="https://www.pg.run/tags/linux/">linux</a>
+    
+    <a href="https://www.pg.run/tags/markdown/">markdown</a>
+    
+    <a href="https://www.pg.run/tags/postman/">postman</a>
+    
+    <a href="https://www.pg.run/tags/sports/">sports</a>
+    
+    <a href="https://www.pg.run/tags/zuul/">zuul</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.94rg.com/" title="人工博客">人工博客</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://www.chenzhuofan.top" title="程序员导航网，便于程序员日常使用的网址集合，你想要的都在这里☺">程序员导航网</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://www.pg.run/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

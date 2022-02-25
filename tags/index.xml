@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 初学者天堂</title>
+    <link>https://www.pg.run/tags/</link>
+    <description>Recent content in Tags on 初学者天堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 23 Feb 2022 11:55:00 +0800</lastBuildDate><atom:link href="https://www.pg.run/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://www.pg.run/tags/blog/</link>
+      <pubDate>Wed, 23 Feb 2022 11:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://www.pg.run/tags/git/</link>
+      <pubDate>Tue, 22 Feb 2022 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://www.pg.run/tags/linux/</link>
+      <pubDate>Fri, 18 Feb 2022 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freemarker</title>
+      <link>https://www.pg.run/tags/freemarker/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/freemarker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>idea</title>
+      <link>https://www.pg.run/tags/idea/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://www.pg.run/tags/java/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://www.pg.run/tags/markdown/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postman</title>
+      <link>https://www.pg.run/tags/postman/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/postman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sports</title>
+      <link>https://www.pg.run/tags/sports/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/sports/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zuul</title>
+      <link>https://www.pg.run/tags/zuul/</link>
+      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      
+      <guid>https://www.pg.run/tags/zuul/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
