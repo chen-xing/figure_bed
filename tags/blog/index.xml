@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on 初学者天堂</title>
+    <title>blog on 主人翁</title>
     <link>https://www.cxztt.com/tags/blog/</link>
-    <description>Recent content in blog on 初学者天堂</description>
+    <description>Recent content in blog on 主人翁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 23 Feb 2022 11:55:00 +0800</lastBuildDate><atom:link href="https://www.cxztt.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 11:55:00 +0800</lastBuildDate><atom:link href="https://www.cxztt.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux系统盘满了怎么办，磁盘满了怎么转移到别的磁盘？</title>
+      <link>https://www.cxztt.com/linux-docker-ln-df.html</link>
+      <pubDate>Mon, 28 Feb 2022 11:55:00 +0800</pubDate>
+      
+      <guid>https://www.cxztt.com/linux-docker-ln-df.html</guid>
+      <description>1、现象 使用docker部署了一个蓝眼网盘，正常运行了一段时间，今天突然无法访问了。起初还以为是docker进程因为某种原因down机了，或者因为网络策略无法访</description>
+    </item>
+    
     <item>
       <title>Rgblog迁移指南</title>
       <link>https://www.cxztt.com/linux-rgblog-migrate.html</link>
